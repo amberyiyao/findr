@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "ca.edumedia.zhou0160.findr"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "ca.edumedia.zhou0160.findr"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "ca.edumedia.zhou0160.findr"
+    }
+  },
+  "dependent_plugins": {}
+}

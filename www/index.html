@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <title>Amber's FINDER</title>
+</head>
+
+<body>
+    <header>Amber's FINDER</header>
+    <div id="add" class="hide">
+        <p>Add New Marker!</p>
+        <input id="newLabel" type="text" placeholder="Enter Label Here...">
+        <div id="buttons">
+            <i id="close" class="far fa-times-circle"></i>
+            <i id="save" class="fas fa-check-circle"></i>
+        </div>
+        <img id="marker" src="img/marker.png">
+    </div>
+    <div id="map"></div>
+    <div id="loading">
+    <img id="loadingIcon"src="img/loadingIcon.svg">
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjHxwgtbbsY0sAWK58ODacLjDx49euDAU"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

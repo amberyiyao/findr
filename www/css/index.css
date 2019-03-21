@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    font-family: Quicksand, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    margin: 0;
+    color: rgb(55, 55, 55);
+}
+
+header {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #f79ea2;
+    font-weight: 700;
+    font-size: 1.18rem;
+    font-family: Ubuntu, BlinkMacSystemFont, 'Segoe UI', Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#loading{
+    position: absolute;
+    top: 6vh;
+    bottom: 6vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingIcon{
+    width: 10%;
+}
+
+/**   Function     **/
+
+
+.hide {
+    display: none !important;
+}
+
+
+/**   Add Window      **/
+
+#add {
+    position: absolute;
+    z-index: 1000;
+    height: 10rem;
+    width: 70vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: calc((100% - 10rem)/2 - 4.5rem);
+    left: calc((100% - 70vw)/2);
+    box-shadow: 1px 1px 1px #999;
+}
+
+#add>p:nth-child(1) {
+    margin-bottom: 1rem;
+    background-color: #f79ea2;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+#add input {
+    width: 80%;
+    margin-left: 0.25rem;
+    padding: 3px 5px;
+    font-size: 1rem;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #999;
+    color: rgb(55, 55, 55);
+    font-family: Quicksand, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#add input:focus {
+    border-bottom: 2px solid rgb(226, 102, 102);
+    transition: all 0.5s linear;
+}
+
+#add>div p {
+    margin-right: 0.25rem;
+    font-size: 1rem;
+}
+
+#add #buttons {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    color: rgb(118, 118, 118);
+    border: 0;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+#save{
+    color:#f79ea2;
+}
+
+#map {
+    background-color: #555;
+    position: absolute;
+    top: 6vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#marker {
+    width: 1.3rem;
+    position: absolute;
+    bottom: -0.9rem;
+}
+
+/* indo window   */
+
+#deleteButton {
+    opacity: 0.4;
+    margin-top: 3px;
+    font-size: 1rem;
+}
+
+.infoWindow p {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.infoWindow {
+    width: 50vw;
+    max-width: 400px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
