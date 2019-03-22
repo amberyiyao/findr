@@ -136,6 +136,14 @@ let app = {
     newPos: {},
     saveMarker: function () {
 
+        let label = document.getElementById('newLabel').value;
+
+        if(!label){
+            alert("Please enter a label!");
+            document.getElementById('newLabel').focus();
+            return;
+        }
+
         let newId = Date.now();
 
         let newMarker = new google.maps.Marker({

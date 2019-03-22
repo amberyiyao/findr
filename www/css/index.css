@@ -26,6 +26,11 @@ header {
     font-family: Ubuntu, BlinkMacSystemFont, 'Segoe UI', Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+header img{
+    width: 1.1rem;
+    margin-right: 0.4rem;
+}
+
 #loading{
     position: absolute;
     top: 6vh;
